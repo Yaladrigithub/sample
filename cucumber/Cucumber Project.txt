@@ -1,0 +1,179 @@
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\ramak\\Downloads\\chromedriver_win32\\chromedriver.exe");
+
+
+3+ Years of industry experience in the area of Software Testing (Manual and Automation) with a solid 
+understanding of Test Planning, Test Design, Test Execution and Defect Reporting & Tracking. 
+Extensive experience in Automation Framework development using Selenium WebDriver, Java & 
+TestNG, Cucumber, API testing.
+Good experience on TestNG, Cucumber framework. 
+Highly experienced with project scoping, test effort estimation, test scheduling, risk analysis and 
+quality management.
+Good experience on version control tool like GIT. 
+Good exposure on key word driven, data driven, hybrid automation frameworks. 
+Good experience on configuring and running automation scripts through Jenkins.
+Utilized Docker for the runtime environment of the CI/CD system to build, test deploy.
+Writing Test cases using Element locators, WebDriver methods, Java programming features and 
+TestNG Annotations. 
+Well versed with Handling Elements in Selenium WebDriver. 
+Ability to develop automation framework & Re-usable scripts for automation. 
+Executing automated regression test suite in different browsers like Internet explorer, Firefox. 
+Extensive experience in Retail and Core Banking application testing. 
+Well acquainted with Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC). 
+Performed all types of testing in various browsers as Internet Explorer, Chrome, Safari, Mozilla etc. 
+Proficient in developing, maintaining, and executing test cases for different Black Box Testing 
+methodologies. 
+Well versed with Test Documentation (Test Scenario, Test Case, Test Data, Defect Report, and Test 
+Metrics). 
+Reviewed test cases for peers and given valuable comments about test case coverage Prepared 
+Requirement Traceability Matrix to ensure the test case coverage for all requirements. 
+Experienced in Designing and executing the test cases in it and Defect tracking tool-JIRA. 
+ Having well versed experience on all testing life cycle activities. 
+ Good experience in testing web applications. 
+ Good experience with the financial, E-commerce domain applications. 
+ Well versed experience on agile scrum methodologies. 
+ Attending daily scrum calls, backlog refinement, Sprint showcase and Sprint retrospective meetings 
+ Strong experience in developing test cases for functional testing, integration testing and System 
+testing scenarios to validate business functional requirements. 
+ Strong experience in developing and reviewing test plans. 
+ Strong experience in generating QA metrics. 
+ Experience in writing SQL queries for data validation as part of database testing. 
+ Co-coordinating with team and executing the tasks effectively.
+
+1)Inheritence
+
+package NewProject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Practies {
+
+	public static void main(String[] args)
+	{
+
+		Iphone6 i6=new Iphone6();
+		i6.Cemara();
+		i6.Phone();
+		Iphone7 i7=new Iphone7();
+		i7.Network();
+		i7.Cemara();
+		i7.Phone();
+		Iphone8 i8=new Iphone8();
+		i8.Cemara();
+	}
+
+}
+//Inhertence
+class Iphone6{
+	void Cemara() {
+		System.out.println("This is 8Px camera");
+	}
+	void Phone() {
+		System.out.println("This is dailpad");
+	}
+	void Network() {
+		System.out.println("This is 3g network");
+	}
+}
+//single level inheretence
+class Iphone7 extends Iphone6{
+	void Network() {
+		System.out.println("This is 4g network");
+	}
+}
+//Multi level Inheritence
+class Iphone8 extends Iphone7{
+	
+}
+
+
+
+2)Polymorphisam
+a)Method overrideing
+package NewProject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Practies {
+
+	public static void main(String[] args)
+	{
+
+		Iphone6 i6=new Iphone6();
+		i6.Cemara();
+		i6.Phone();
+		Iphone7 i7=new Iphone7();
+		i7.Network();
+		i7.Cemara();
+		i7.Phone();
+		
+	}
+
+}
+//Inhertence
+class Iphone6{
+	void Cemara() {
+		System.out.println("This is 8Px camera");
+	}
+	void Phone() {
+		System.out.println("This is dailpad");
+	}
+	void Network() {
+		System.out.println("This is 3g network");
+	}
+}
+// Method overriding
+class Iphone7 extends Iphone6{
+	void Cemara() {
+		System.out.println("This is 16Px camera");
+	}
+}
+
+b) method overloading
+class Math{
+	void Add(int a,int b) {
+		System.out.println(a+b);
+	}
+	void Add(int a,int b,int c) {
+		System.out.println(a+b+c);
+	}
+	void Add(float a,float b,float c) {
+		System.out.println(a+b+c);
+	}
+}
+
+
+
+
+
+
+
+
+
+----------------------------------------
+which branch is pointing
+git log --oneline --decorate
+
+creat new branch:
+git branch develop
+
+
+switch to the one branch to another branch:
+git checkout develop
+
+how create the file:
+vi develop_file.txt
+
+
+commit the code:
+git commit -m "these code developed by yaladri"
+
+git remote -v
+git push origin develop
+
+git checkout master
+git merge develop
+
+git push origin master
+
